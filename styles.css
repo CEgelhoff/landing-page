@@ -11,29 +11,59 @@ a{
     width: 100px;
     height: 100px;
     object-fit: contain;
-
+}
+.sunflowers{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
 }
 
 body{
     font-family: "Roboto", sans-serif;
+    margin: 0px;
 }
 
 .header, .footer{
     background-color: #1F2937;
 }
 
-.top-header{
+.Logo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.blh-title{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
-.top-left-header{
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.bottom-left-header, a{
+a, .blh-text{
     font-size: 18px;
     color: #E5E7EB;
 }
+
+.blh-text{
+
+}
+
+*{
+    border: 2px solid purple;
+}
+
+/* FLEXBOX */
+
+.top-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left-header{
+    display: flex;
+}
+
+.top-right-header{
+    display: flex;
+    
+}
+
