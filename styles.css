@@ -1,10 +1,13 @@
 ul{
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px 20px;
 }
 a{
     text-decoration: none;
+}
+img{
+    border-radius: 12px;
 }
 
 .butterfly{
@@ -22,8 +25,8 @@ a{
     width: 150px;
     height: 150px;
     object-fit: fill;
-    border: 3px solid #3882F6;
-    border-radius: 15px;
+    border: 5px solid #3882F6;
+    border-radius: 20px;
 }
 
 body{
@@ -64,6 +67,55 @@ a, .blh-text{
     color: #1F2937;
 }
 
+.header, .body, .footer{
+    padding: 0px 150px;
+}
+
+.image-text{
+    font-size: small;
+    font-weight: normal;
+    color: #14181f;
+}
+
+.quote{
+    background-color: #E5E7EB;
+    padding: 100px 0px;
+}
+
+.quote-text, .quote-author{
+    font-size: 36px;
+    font-style: oblique 20deg;
+    color: #1F2937;
+}
+
+.quote-author{
+    font-weight: 700;
+    font-size: large;
+}
+
+.call-to-action{
+    background-color: #3882F6;
+    margin: 100px 100px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.sign-up-button{
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.cta-title{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.footer{
+    color: white;
+    padding: 20px;
+}
+
 *{
     border: 2px solid purple;
 }
@@ -73,26 +125,27 @@ a, .blh-text{
 .header{
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
 .top-header{
     display: flex;
     justify-content: space-between;
-    flex: 1, 1, auto;
 }
 
-.top-left-header{
+.top-left-header, .quote{
     display: flex;
+}
+
+.top-right-header{
+    display: flex;
+    justify-content: end;
 }
 
 .link-header{
     display: flex;
-    justify-items: flex-end;
 }
 
-.bottom-header{
+.bottom-header, .pug-buttons, .body{
     display: flex;
 }
 
@@ -100,20 +153,20 @@ a, .blh-text{
     padding-top: 40px;
 }
 
-.body{
-    display: flex;
+.body, .quote{
     flex-direction: column;    
 }
 
 .info{
     display: flex;
-    padding: 40px 150px 0px 150px;
+    flex-direction: column;
+    align-items: space-evenly;
+    height: 400px;
 }
 
-.image-text{
-    font-size: small;
-    font-weight: normal;
-    color: #14181f;
+.info-title{
+    align-self: center;
+    margin-bottom: 50px;
 }
 
 .img-button-one, .img-button-two, .img-button-three, .img-button-four{
@@ -124,12 +177,21 @@ a, .blh-text{
     align-content: center;
 }
 
-.quote{
-    color: #E5E7EB;
+.quote-author{
+    align-self: flex-end;
 }
 
-.quote-text, .quote-author{
-    font-size: 36px;
-    font-style: light italic;
-    color: #1F2937;
+.call-to-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
 }
