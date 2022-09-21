@@ -29,6 +29,10 @@ img{
     border-radius: 20px;
 }
 
+li{
+    padding: 0 15px;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     margin: 0px;
@@ -75,6 +79,7 @@ a, .blh-text{
     font-size: small;
     font-weight: normal;
     color: #14181f;
+    margin-top: 5px;
 }
 
 .quote{
@@ -134,11 +139,6 @@ a, .blh-text{
 
 .top-left-header, .quote{
     display: flex;
-}
-
-.top-right-header{
-    display: flex;
-    justify-content: end;
 }
 
 .link-header{
