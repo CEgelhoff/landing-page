@@ -9,6 +9,10 @@ a{
 img{
     border-radius: 12px;
 }
+button:hover{
+    background-color: black;
+    color: green;
+}
 
 .butterfly{
     width: 100px;
@@ -30,7 +34,13 @@ img{
 }
 
 li{
-    padding: 0 15px;
+    padding: 20px 15px;
+}
+
+li:hover{
+    background-color: black;
+    border: 10px solid green;
+    text-align: center;
 }
 
 body{
@@ -45,6 +55,7 @@ body{
 .Logo{
     font-size: 24px;
     color: #F9FAF8;
+    padding: 20px 20px;
 }
 
 button{
@@ -84,7 +95,7 @@ a, .blh-text{
 
 .quote{
     background-color: #E5E7EB;
-    padding: 100px 0px;
+    padding: 100px 50px;
 }
 
 .quote-text, .quote-author{
@@ -121,10 +132,6 @@ a, .blh-text{
     padding: 20px;
 }
 
-*{
-    border: 2px solid purple;
-}
-
 /* FLEXBOX */
 
 .header{
@@ -149,6 +156,10 @@ a, .blh-text{
     display: flex;
 }
 
+.bottom-header{
+    justify-content: space-between;
+}
+
 .bottom-left-header{
     padding-top: 40px;
 }
@@ -161,12 +172,12 @@ a, .blh-text{
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
-    height: 400px;
+    height: 500px;
 }
 
 .info-title{
     align-self: center;
-    margin-bottom: 50px;
+    margin: 50px 0px;
 }
 
 .img-button-one, .img-button-two, .img-button-three, .img-button-four{
